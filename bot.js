@@ -8,7 +8,7 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = '-';         //by : mr hngrl
+const prefix = 'M';         //by : mr hngrl
 
 
   const discord_token = process.env.BOT_TOKEN;
@@ -242,26 +242,26 @@ function search_video(query, cb) {
 
          //by : mr hngrl
 
-const adminprefix = "M";  
-const devs = ['320423357709549568'];  
+const adminprefix = "!";  
+const devs = ['228139766573432832'];  
 hngel.on('message', message => {  
   var argresult = message.content.split(` `).slice(1).join(' ');  
     if (!devs.includes(message.author.id)) return;  
     
-if (message.content.startsWith(adminprefix + 'بلاينق')) {  
+if (message.content.startsWith(adminprefix + 'setgame')) {  
   hngel.user.setGame(argresult);
     message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
 } else 
-  if (message.content.startsWith(adminprefix + 'نيم')) {
+  if (message.content.startsWith(adminprefix + 'setname')) {
 hngel.user.setUsername(argresult).then
     message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`)
 return message.reply("**لا يمكنك تغيير الاسم يجب عليك الانتظآر لمدة ساعتين . **");
 } else
-  if (message.content.startsWith(adminprefix + 'افتار')) {
+  if (message.content.startsWith(adminprefix + 'setavatar')) {
 hngel.user.setAvatar(argresult);
   message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
       } else     
-if (message.content.startsWith(adminprefix + 'ستريم')) {
+if (message.content.startsWith(adminprefix + 'setT')) {
   hngel.user.setGame(argresult, "https://www.twitch.tv/hngel2667");
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
 }
@@ -300,8 +300,13 @@ function isYoutube(str) {
       message.channel.send({embed});
      }
     });
+
          //by : mr hngrl
 
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 
